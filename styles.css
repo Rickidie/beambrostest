@@ -1,0 +1,266 @@
+body {
+    background: grey;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+header {
+    background:rgb(27, 26, 26);
+    display: flex;
+    flex-direction: row;
+    padding: 0px 20px 0px 0px;
+    box-shadow: 0px 0px 10px rgb(44, 44, 44);
+    justify-content: space-between;
+    box-shadow: 0px 0px 10px black;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+        & h2 {
+            padding: 6px 0px 0px 25px;
+        }
+        & a {
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+}
+.infotitle {
+    padding: 0px;
+}
+nav {
+    & ul {
+        top: auto;
+        margin: 0px;
+        padding: 0px;
+        list-style-type: none;
+        
+        & li {
+            font-size: 12px;
+            display: inline-block;
+            margin: 20px;
+            padding: 0px;
+        }
+
+    }
+}
+nav ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+nav li {
+    font-size: 12px;
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+}
+header ul li.book {
+    background-color: white;
+    padding: 10px 15px 10px 15px;
+    border-radius: 20px;
+}
+header ul li.book a{
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+}
+.infonav {
+    padding-top: 10px;
+}
+section {
+    color: black;
+    padding: 10px 20px 10px 20px;
+}
+.subheader {
+    color: black;
+    background-image: linear-gradient(to bottom, 
+    rgba(146, 190, 189,1), rgba(0, 0, 0, 0));
+    position: absolute;
+    width: 100%;
+    padding-left: 35px;
+}
+.feature_image {
+    background-image: url("images/room2.jpg");
+    height: 700px;
+    background-position: 0px 20px;
+    z-index: 1;
+    top: 0;
+    margin-top: -80px;
+    background-attachment: fixed;
+}
+.feature_image h2.title {
+    color: white;
+    text-align: center;
+    padding-top: 250px;
+    font-size: 70px;
+    text-transform: uppercase;
+    opacity: 1;
+}
+.home1 {
+    background: rgb(214, 214, 214);
+    height: 500px;
+    text-transform: uppercase;
+    padding: 40px;
+    color: rgb(39, 166, 245);
+    z-index: 10;
+}
+.home1 h1 {
+    font-size: 30px;
+    text-align: center;
+}
+.home1 div.dominant {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    flex-shrink: 1;
+}
+.home1 div.dominant figure {
+    padding: 0;
+    margin: 0;
+    width: 200px;
+    text-align: center;
+    & figcaption {
+        height:37px;
+
+    }
+    & p {
+        text-transform: none;
+        width:200px;
+    }
+    & div {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 30px;
+        border-radius: 50%;
+        background-color: black;
+    }
+}
+/* Product Page */
+.product_image {
+    background: rgb(214, 214, 214);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 100px 0px 200px 50px; 
+    text-align: center;
+}
+.product_image figure img {
+    width: 350px;
+    border-radius: 20px 20px 0px 0px;
+    box-shadow: 0px 0px 5px grey;
+}
+.product_image figure figcaption {
+    margin: -2px 10px 20px 10px;
+    padding: 10px;
+    width: 330px;
+    background-color: rgb(244, 244, 244);
+    border-radius: 0px 0px 20px 20px;
+    box-shadow: 0px 0px 5px grey;
+}
+/* responsive rules */
+/* @media screen and (max-width: 1450px) {
+    .product_image {
+        display: grid;
+        grid-template-columns: repeat(2, 500px);
+        grid-template-rows: repeat(auto, 350px);
+    }
+}
+@media screen and (max-width: 950px) {
+    .product_image {
+        display: grid;
+        grid-template-columns: repeat(1, 500px);
+        grid-template-rows: repeat(auto, 350px);
+    }
+} */
+/* Contact Page */
+.selection {
+    color: black;
+    background: rgb(214, 214, 214);
+    display: flex;
+    flex-direction: row;
+    padding: 100px 0px 100px 0px;
+}
+.selection div{
+    background-image: linear-gradient(45deg, white, rgb(230, 230, 230));
+    width: 40%;
+    margin: auto;
+    height: 400px;
+    padding: 10px 20px 0px 20px;
+    border-radius: 15px 15px 15px 15px;
+    font-weight: 500;
+    justify-content: center;
+}
+.selection div h2 {
+    color: white;
+    text-align: center;
+    margin: 0px;
+    padding: 10px;
+    background: grey;
+    border-radius: 50px 50px 50px 50px;
+}
+.selection div div.inner {
+    background: rgb(214, 214, 214);
+    margin: 10px 0px 0px 0px;
+    padding: 0px 20px 20px 20px;
+    height: 75%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+a.booking {
+    background-image: linear-gradient(45deg, rgb(39, 166, 245), rgb(77, 179, 242));
+    color: black;
+    padding: 10px 15px 10px 15px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    &:hover {
+        box-shadow: 2px 2px 2px rgb(84, 84, 84), -2px -2px 2px rgb(239, 239, 239);
+    }
+}
+.buttonanimation:hover {
+    animation-name: buttonani;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+@keyframes buttonani {
+    to {
+        scale: 1.05;
+        background-image: linear-gradient(-45deg, rgb(39, 166, 245), rgb(87, 182, 240));
+    }
+}
+/* Info Page */
+.info {
+    background: rgb(214, 214, 214);
+    height:400px;
+    padding: 100px;
+    justify-content: center;
+    & form.enterinfo {
+        background: rgb(244, 244, 244);
+        padding: 40px;
+        width: 90%;
+        height: 90%;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+    }
+}
+
+/* footer */
+footer {
+    background: rgb(68, 68, 68);
+    color:white;
+    height:100px;
+    padding:50px;
+    text-align: center;
+    position:relative;
+    box-shadow: 0px 0px 5px grey;
+}
